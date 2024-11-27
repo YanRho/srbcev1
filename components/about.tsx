@@ -1,53 +1,61 @@
 "use client";
 
+import Image from "next/image";
+
 export const About = () => {
   return (
-    <section
-      id="about"
-      className="py-16 bg-gray-100 text-gray-900 relative z-0"
-    >
-      <div className="container mx-auto max-w-5xl px-4 text-center">
-        {/* Section Heading */}
-        <h2 className="text-4xl font-bold mb-6 text-[#233df8]">
-          About Us
-        </h2>
-        <p className="text-lg text-gray-700 mb-8">
-          At SRB Construction & Engineering Services, we specialize in delivering high-quality construction
-          and engineering solutions. Our team is dedicated to turning your vision into reality with precision,
-          expertise, and professionalism.
-        </p>
+    <section id="about" className="py-16 bg-white text-gray-900 relative">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center px-4 lg:px-16 gap-8">
+        {/* Left Content */}
+        <div className="lg:w-2/3 text-left space-y-8">
+          {/* Heading */}
+          <h2 className="text-5xl font-bold text-black leading-tight">
+            ABOUT SRBCE
+          </h2>
+          {/* Description */}
+          <p className="text-lg leading-relaxed">
+            <span className="font-bold text-2xl">
+              SRB <span className="text-gradient">Construction Services</span>
+            </span>{" "}
+            is a company focusing on innovative construction practices dedicated
+            to delivering high-quality and sustainable solutions to our clients.
+            With a commitment to excellence, integrity, and client satisfaction,
+            we have established ourselves as a trusted partner in this industry.
+          </p>
 
-        {/* About Highlights */}
-        <div className="flex flex-wrap justify-center gap-8">
           {/* Mission */}
-          <div className="max-w-xs text-center">
-            <h3 className="text-2xl font-semibold mb-4 text-[#14239b]">
-              Our Mission
-            </h3>
-            <p>
-              To provide innovative and sustainable construction solutions while exceeding client expectations.
+          <div className="space-y-4">
+            <p className="text-lg leading-relaxed">
+              Our{" "}
+              <span className="font-bold text-gradient text-2xl">Mission</span>{" "}
+              is to redefine the construction landscapes through unwavering
+              dedication to quality, innovation, and sustainability. Grounded in
+              integrity and driven by a passion for excellence, we strive to
+              exceed expectations, empower communities, and leave a lasting
+              legacy of craftsmanship and integrity.
             </p>
           </div>
 
           {/* Vision */}
-          <div className="max-w-xs text-center">
-            <h3 className="text-2xl font-semibold mb-4 text-[#14239b]">
-              Our Vision
-            </h3>
-            <p>
-              To be a trusted leader in the construction and engineering industry, recognized for quality and integrity.
+          <div className="space-y-4">
+            <p className="text-lg leading-relaxed">
+              We{" "}
+              <span className="font-bold text-gradient text-2xl">envision</span>{" "}
+              a future where our name resonates as the epitome of excellence in
+              the construction industry.
             </p>
           </div>
+        </div>
 
-          {/* Values */}
-          <div className="max-w-xs text-center">
-            <h3 className="text-2xl font-semibold mb-4 text-[#14239b]">
-              Our Values
-            </h3>
-            <p>
-              Integrity, excellence, innovation, and commitment to sustainability.
-            </p>
-          </div>
+        {/* Right Graphic */}
+        <div className="lg:w-1/3 flex justify-center items-center">
+          <Image
+            src="/images/srbcelogo.png"
+            width={800}
+            height={800}
+            alt="SRB Logo"
+            className="max-w-full"
+          />
         </div>
       </div>
     </section>
