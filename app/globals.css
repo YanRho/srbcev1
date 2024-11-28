@@ -4,6 +4,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
 
+/* Slick Carousel Styles */
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
 body {
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
 }
@@ -22,11 +27,15 @@ animation: fadeIn 2s ease-in-out;
   }
 }
 
+
+
 .text-gradient {
   background: linear-gradient(to right, #000000, #5eb4f7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+
 
 @layer base {
   :root {
